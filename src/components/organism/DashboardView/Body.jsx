@@ -9,92 +9,8 @@ import HumedadChart from "../Grafics/HumedadChart";
 import LuminosidadChart from "../Grafics/LuminosidadChart";
 
 
-const data = [
-    {
-        name: '00:00',
-        C: 30.5,
-    },
-    {
-        name: '02:00',
-        C: 28.3,
-    },
-    {
-        name: '04:00',
-        C: 29.7,
-    },
-    {
-        name: '06:00',
-        C: 27.8,
-    },
-    {
-        name: '08:00',
-        C: 31.2,
-    },
-    {
-        name: '10:00',
-        C: 32.6,
-    },
-    {
-        name: '12:00',
-        C: 34.1,
-    },
-    {
-        name: '14:00',
-        C: 30.0,
-    },
-    {
-        name: '16:00',
-        C: 33.2,
-    },
-    {
-        name: '18:00',
-        C: 30.9,
-    },
-    {
-        name: '20:00',
-        C: 34.0,
-    },
-    {
-        name: '22:00',
-        C: 32.4,
-    }
 
 
-];
-
-const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
-
-const pie = [
-
-    {
-        name: 'x',
-        C: 3000,
-        Humedad: 1398,
-        amt: 2210,
-    },
-    {
-        name: 'y',
-        C: 2000,
-        Humedad: 9800,
-        amt: 2290,
-    },
-    {
-        name: 'z',
-        C: 2780,
-        Humedad: 3908,
-        amt: 2000,
-    },
-    {
-        name: 'a',
-        C: 2780,
-        Humedad: 3908,
-        amt: 2000,
-    },
-
-
-
-
-];
 
 const Body = () => {
 
@@ -162,12 +78,14 @@ const Body = () => {
               
                
             </div>
-            {/* <Cards></Cards> */}
+       
 
 
             {/* grafica */}
             {selectedChart}
 
+
+       
 
         </div>
 

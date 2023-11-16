@@ -103,7 +103,7 @@ const LuminosidadChart = () => {
                 </div>
                 <div>
                     <LineChart
-                        width={1700}
+                        width={1600}
                         height={500}
                         data={data}
                         margin={{

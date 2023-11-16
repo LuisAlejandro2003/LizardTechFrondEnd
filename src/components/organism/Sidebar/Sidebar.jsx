@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import SectionConfig from '../../molecules/Sidebar/SectionConfig'
 import SectionUtilities from '../../molecules/Sidebar/SectionUtilities'
 import { FaTachometerAlt,  FaChevronLeft } from "react-icons/fa"
@@ -11,10 +12,10 @@ const Sidebar = () => {
             <div className='px-[15px] py-[30px] flex items-center justify-center border-b-[1px] border-[#EDEDED]/[0.3]'>
                 <h1 className='text-white text-[20px] leading-[24px] font-extrabold cursor-pointer'>Admin Panel</h1>
             </div>
-            <div className='flex items-center gap-[15px] py-[20px] border-b-[1px] border-[#EDEDED]/[0.3] cursor-pointer'>
+            <Link to="/home" className='flex items-center gap-[15px] py-[20px] border-b-[1px] border-[#EDEDED]/[0.3] cursor-pointer'>
                 <FaTachometerAlt color='white' />
                 <p className='text-[14px] leading-[20px] font-bold text-white'>Dashboard</p>
-            </div>
+            </Link>
 
             {/* Sections  */}
             <SectionConfig></SectionConfig>

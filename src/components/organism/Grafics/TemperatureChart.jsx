@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import io from 'socket.io-client';
 import { FaEllipsisV } from 'react-icons/fa';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
 const initialData = [
     {
@@ -18,7 +18,7 @@ const initialData = [
     },
     {
         name: '06:00',
-    
+
     },
     {
         name: '08:00',
@@ -83,13 +83,13 @@ const TemperatureChart = () => {
         <>
             <div className="flex mt-[22px] w-full gap-[30px]">
                 <div className="basis-[100%] border bg-white shadow-md cursor-pointer rounded-[4px]">
-                    <div className="bg-[#F8F9FC] flex items-center justify-center justify-between py-[15px] px-[20px] border-b-[1px] border-[#EDEDED] mb-[20px]">
+                    <div className="bg-[#F8F9FC] flex items-center justify-center  py-[15px] px-[20px] border-b-[1px] border-[#EDEDED] mb-[20px]">
                         <h2>Datos</h2>
                         <FaEllipsisV color="gray" className="cursor-poniter" />
                     </div>
                     <div>
                         <LineChart
-                            width={1700}
+                            width={1600}
                             height={500}
                             data={chartData}
                             margin={{
