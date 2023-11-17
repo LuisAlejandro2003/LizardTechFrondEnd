@@ -5,6 +5,8 @@ import { Outlet } from 'react-router-dom'
 
 function App() {
   return (
+
+    
     <div className='flex'>
       <div className='basis-[12%] h-[100vh]'>
         <Sidebar></Sidebar>

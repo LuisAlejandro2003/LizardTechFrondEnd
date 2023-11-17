@@ -1,83 +1,41 @@
 import React, { useState, useEffect } from 'react';
-import io from 'socket.io-client';
 import { FaEllipsisV } from 'react-icons/fa';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
 const initialData = [
-    {
-        name: '00:00',
-
-    },
-    {
-        name: '02:00',
-
-    },
-    {
-        name: '04:00',
-
-    },
-    {
-        name: '06:00',
-
-    },
-    {
-        name: '08:00',
-
-    },
-    {
-        name: '10:00',
-
-    },
-    {
-        name: '12:00',
-
-    },
-    {
-        name: '14:00',
-
-    },
-    {
-        name: '16:00',
-
-    },
-    {
-        name: '18:00',
-
-    },
-    {
-        name: '20:00',
-
-    },
-    {
-        name: '22:00',
-
-    }
+    { name: '00:00' },
+    { name: '02:00' },
+    { name: '04:00' },
+    { name: '06:00' },
+    { name: '08:00' },
+    { name: '10:00' },
+    { name: '12:00' },
+    { name: '14:00' },
+    { name: '16:00' },
+    { name: '18:00' },
+    { name: '20:00' },
+    { name: '22:00' },
 ];
 
 const TemperatureChart = () => {
     const [chartData, setChartData] = useState(initialData);
 
-    const newSocket = io('http://localhost:3001');
-
     useEffect(() => {
-        newSocket.on('nuevos-datos', (newData) => {
-            console.log(newData);
-            // Actualiza los datos según la hora y temperatura recibidos
-            const newDataArray = chartData.map((item) => {
-                if (item.name === newData.hora) {
-                    return { name: newData.hora, C: newData.temperatura };
-                }
-                return item;
-            });
+        // Realizar la solicitud HTTP GET
+        fetch('http://localhost:8080/api/data/grafic')
+            .then(response => response.json())
+            .then(data => {
+                // Mapear los datos recibidos y actualizar el estado
+                const newDataArray = initialData.map(item => {
+                    const matchingData = data.datas.find(d => d.hora === item.name);
+                    return matchingData ? { name: item.name, C: matchingData.temperatura } : item;
+                });
 
-            // Actualiza el estado con los nuevos datos
-            setChartData(newDataArray);
-        });
-
-        return () => {
-            newSocket.disconnect();
-        };
-    }, [chartData, newSocket]);
+                // Actualizar el estado con los nuevos datos
+                setChartData(newDataArray);
+            })
+            .catch(error => console.error('Error al obtener datos:', error));
+    }, []); // El segundo parámetro [] significa que este efecto se ejecutará solo una vez al montar el componente
 
     return (
         <>
