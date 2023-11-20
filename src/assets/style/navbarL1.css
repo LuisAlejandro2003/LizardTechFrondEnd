@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lunasima&family=Playfair+Display:wght@700&display=swap');
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 2% 0px;
+    z-index: 10;
+    background-color: white;
+}
+header nav ul li label{
+    cursor: pointer;
+}
+
+header .logo {
+    width: 20%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    font-size: larger;
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.links{
+    padding-bottom: 5px;
+}
+
+header .links:after {
+    content: " ";
+    width: 0;
+    height: 4px;
+    background-color: #a0c95b;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all 0.5s;
+    will-change: width;
+}
+
+header .links:hover:after {
+    width: 100%;
+    right: 0;
+}

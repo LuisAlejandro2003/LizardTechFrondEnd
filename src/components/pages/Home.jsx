@@ -1,5 +1,4 @@
-import Dashboard from '../organism/DashboardView/Dashboard';
-import Sidebar from '../organism/Sidebar/Sidebar';
+import Dashboard from '../organism/DashboardView/Dashboard';;
 import Body from '../organism/DashboardView/Body';
 import Sidebar2 from '../organism/Sidebar/Sidebar2';
 

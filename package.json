@@ -10,7 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
     "@reduxjs/toolkit": "^1.9.7",
+    "framer-motion": "^10.16.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
@@ -20,7 +22,8 @@
     "recharts": "^2.8.0",
     "redux": "^4.2.1",
     "socket.io": "^4.7.2",
-    "socket.io-client": "^4.7.2"
+    "socket.io-client": "^4.7.2",
+    "tailwindcss-animated": "^1.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

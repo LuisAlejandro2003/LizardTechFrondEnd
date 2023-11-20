@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lunasima&family=Playfair+Display:wght@700&family=Rubik:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+.cuadroIzquierda {
+    background: rgba(217, 217, 217, 0.43);
+    backdrop-filter: blur(10px);
+    height: 80vh;
+    width: 50%;
+    z-index: 1;
+
+}
+
+.cuadroDerecha {
+    background: transparent;
+    height: 80vh;
+    width: 50%;
+    z-index: 1;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.fotito {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-image: url(../img/img-fondo-1.svg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+}
+
+.textoIzquierda {
+    display: flex;
+    flex-direction: end;
+    justify-content: end;
+    align-items: center;
+    height: 70%;
+}
+
+.textoDerecha {
+    z-index: 2;
+}
+
+.fotito h1 {
+    z-index: 2;
+    font-family: Rubik;
+    font-weight: 800;
+    font-size: 7rem;
+    background: linear-gradient(180deg, #FFF 43.75%, #2AB2B8 99.99%);
+    font-style: normal;
+    line-height: normal;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitulo {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    height: 30%;
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+    color: white;
+}
+
+.subtitulo h3 {
+    padding: 0px 150px 30px 20px;
+}
+
+.text-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6%;
+}
+
+.text-about h1 {
+    color: #000;
+    font-family: Roboto Slab;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}

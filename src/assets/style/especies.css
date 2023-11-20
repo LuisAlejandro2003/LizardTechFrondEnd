@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap');
+.a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 6% 0;
+}
+
+.a h1 {
+    color: #000;
+    font-family: Roboto Slab;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}

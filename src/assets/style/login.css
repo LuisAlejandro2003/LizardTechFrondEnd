@@ -1,0 +1,221 @@
+.padre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.padre .login {
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+    width: 90%;
+    background-image: url(../img/fondoLoger.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.padre .login .form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 36%;
+    background: rgba(217, 217, 217, 0.10);
+    backdrop-filter: blur(5px);
+}
+
+.padre .login .information {
+    height: 100%;
+    width: 64%;
+    padding-left: 20px;
+}
+
+.padre .login .form h3 {
+    padding-top: 80px;
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.login .title h1 {
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.login .title {
+    height: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.login .welcome {
+    display: flex;
+    align-items: end;
+    height: 20%;
+}
+
+.login .text {
+    display: flex;
+    align-items: center;
+    width: 55%;
+    height: 20%;
+}
+
+.login .information .welcome h3 {
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.login .information .text p {
+    color: #FFF;
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.login .information .redes li {
+    padding-right: 5%;
+    list-style: none;
+}
+
+.login .information .redes {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.login .form .section .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 30px;
+    --color: #FFFFFF;
+}
+
+.login .form .section .box .form-input {
+    width: 100%;
+    font-size: 1rem;
+    color: #FFF;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+}
+
+.login .form .section .box .form-label {
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.5rem;
+    top: -5px;
+    left: 5px;
+    transition: transform 0.5s, color 0.3s;
+}
+
+.login .form .section .box .form-input:focus+.form-label,
+.form-input:not(:placeholder-shown)+.form-label {
+    transform: translateY(-20px) translateX(-5px) scale(0.7);
+    transform-origin: top left;
+    --color: #000000;
+}
+
+.login .form .section .recuperar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.login .form .section .recuperar a{
+    text-decoration: none;
+    color: white;
+    font-family: Nunito;
+}
+
+.login .form .section .btn {
+    width: 100%;
+    height: 42px;
+    border: none;
+    border-radius: 5px;
+    background: #67C557;
+    margin: 20px 0;
+    cursor: pointer;
+    color: white;
+}
+
+.login .form  .section .btn:hover{
+    color: black;
+}
+
+.login .form .section .change a {
+    text-decoration: none;
+    color: white;
+    font-family: Nunito;
+}
+
+.login .form .section .change label {
+    text-decoration: none;
+    color: white;
+    font-family: Nunito;
+}
+
+.login .form .section .change a label:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.login .form .section .btn-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 80px;
+    padding-top: 20px;
+}
+
+.login .form .section .btn-home a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+.login .form .section .btn-home a:hover {
+    background: #67C557;
+}
+
+.login .form .section .btn-home label {
+    color: white;
+    font-family: Nunito;
+    padding-bottom: 20px;
+}
+
+.login .form .section .btn-home a img {
+    width: 25px;
+    transform: scaleX(-1);
+}
