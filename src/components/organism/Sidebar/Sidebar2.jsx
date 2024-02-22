@@ -3,11 +3,9 @@ import React from 'react';
 const Sidebar2 = () => {
 
   const handleLogout = () => {
-    // Limpiar el token en el local storage al hacer clic en "Salir"
     localStorage.removeItem('token');
-    // También podrías redirigir al usuario a la página de inicio de sesión o realizar otras acciones necesarias
+    localStorage.removeItem('idUser');
   };
-
 
   return (
 

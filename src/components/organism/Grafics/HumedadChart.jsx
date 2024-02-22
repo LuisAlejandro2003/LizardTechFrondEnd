@@ -29,7 +29,7 @@ const HumedadChart = () => {
 
         // Verificar si hay un token antes de realizar la solicitud
         if (token) {
-            fetch('http://localhost:8080/api/data/grafic', {
+            fetch('http://34.233.172.135:8080/api/data/grafic', {
                 headers: {
                     'x-token': token,
                 },

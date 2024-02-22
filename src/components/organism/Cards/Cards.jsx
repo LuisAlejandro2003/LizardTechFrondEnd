@@ -11,7 +11,7 @@ const Cards = () => {
     });
 
     useEffect(() => {
-        const newSocket = io('http://localhost:3001');
+        const newSocket = io('http://34.230.157.214:3000');
 
         newSocket.on("connect", () => {
             console.log('Conectado al servidor');

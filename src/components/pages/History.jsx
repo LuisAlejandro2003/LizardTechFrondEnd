@@ -10,7 +10,7 @@ const History = () => {
 
         // Verificar si hay un token antes de realizar la solicitud
         if (token) {
-            fetch('http://localhost:8080/api/data', {
+            fetch('http://34.233.172.135:8080/api/data', {
                 headers: {
                     'x-token': token,
                 },

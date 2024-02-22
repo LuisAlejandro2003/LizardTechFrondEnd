@@ -15,7 +15,7 @@ const Statistics = () => {
 
         // Verificar si hay un token antes de realizar la solicitud
         if (token) {
-            fetch('http://localhost:8080/api/data/temperature', {
+            fetch('http://34.233.172.135:8080/api/data/temperature', {
                 headers: {
                     'x-token': token,
                 },
@@ -39,7 +39,7 @@ useEffect(() => {
 
     // Verificar si hay un token antes de realizar la solicitud
     if (token) {
-        fetch('http://localhost:8080/api/data/media', {
+        fetch('http://34.233.172.135:8080/api/data/media', {
             headers: {
                 'x-token': token,
             },

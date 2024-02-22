@@ -14,7 +14,7 @@ const Body = () => {
     const [socket, setSocket] = useState(null);
 
     useEffect(() => {
-        const newSocket = io('http://localhost:3000');
+        const newSocket = io('http://34.230.157.214:3000');
 
         newSocket.on("nuevos-datos", (data) => {
             console.log('Datos recibidos desde el socket:', data);
