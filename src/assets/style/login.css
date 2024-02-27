@@ -57,12 +57,12 @@
     align-items: center;
 }
 
-.login .welcome {
+.register .welcome {
     display: flex;
-    align-items: end;
+    align-items: flex-end;
+    justify-content: flex-end;
     height: 20%;
 }
-
 .login .text {
     display: flex;
     align-items: center;
@@ -96,7 +96,7 @@
 .login .information .redes {
     position: relative;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
 }
